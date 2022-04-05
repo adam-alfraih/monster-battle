@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.blue {
+    background-color: rgb(57, 101, 231);
+}
+
+.red {
+    background-color: rgb(245, 6, 6);
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem 0.5rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+    margin: 0.3rem;
+    border: 1px solid #efefef;
+    border-radius: 0.2rem;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+}
+
+.thumb-container .number {
+    border-radius: 1rem;
+    padding: 0.2rem 0.4rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.thumb-container img {
+    width: 120px;
+    height: 120px;
+}
+
+.thumb-container small {
+    text-transform: capitalize;
+}
+
+.detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.detail-wrapper button {
+    color: rgb(22, 22, 22);
+    padding: .5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+.battle {
+    background: #000000 linear-gradient(#af9d6d, #c09a1d) repeat-x;
+    border-radius: 2px;
+    border: 1px solid #c6c6c6;
+    color: #444;
+    padding: 0.5rem 1.5rem;
+    min-width: 25%;
+    margin-bottom: 3rem;
+}
+
+.battle-cards {
+    display: flex;
+}
