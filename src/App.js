@@ -157,7 +157,7 @@ const App = () => {
         const HP_R = teamR[indexR].HP
 
         if (HP_B > HP_R) {
-            setWhoWins('BLUE Team won that battle!!')
+            setWhoWins('Blue Team Wins!')
             setTeamBWins(current => [...current, teamB[indexB], teamR[indexR]])
             setTeamB([
                 ...teamB.slice(0, indexB),
@@ -169,7 +169,7 @@ const App = () => {
             ])
 
         } else if (HP_R > HP_B) {
-            setWhoWins('RED Team won that battle!!')
+            setWhoWins('Red Team Wins!')
             setTeamRWins(current => [...current, teamB[indexB], teamR[indexR]])
             setTeamB([
                 ...teamB.slice(0, indexB),
@@ -204,18 +204,18 @@ const App = () => {
 
     return (
         <div className="app-container">
-            <h1>Card Battle</h1>
-            <h2>BLUE {teamBScore} - {teamRScore} RED</h2>
+            <h1>Monster Battle: The Card Game</h1>
+            <h2>Blue Team - {teamBScore} | {teamRScore} - Red Team</h2>
             <div className="battle-cards">
                 <Card
-                    id='BLUE TEAM'
+                    id='Blue Team'
                     image={currentCardB.front_default}
                     name={currentCardB.name}
                     type='blue'
                     HP={currentCardB.HP}
                 />
                 <Card
-                    id='RED TEAM'
+                    id='Red Team'
                     image={currentCardR.front_default}
                     name={currentCardR.name}
                     type='red'

@@ -5,14 +5,15 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(243, 243, 243);
 }
 
 .blue {
-    background-color: rgb(57, 101, 231);
+    background-color: #E0F1FD;
 }
 
 .red {
-    background-color: rgb(245, 6, 6);
+    background-color: #FBE3DF;
 }
 
 .app-container {
@@ -74,7 +75,7 @@ body {
 }
 
 .detail-wrapper button {
-    color: rgb(22, 22, 22);
+    color: rgb(201, 201, 201);
     padding: .5rem;
     margin-top: 1rem;
     border: none;
@@ -84,8 +85,8 @@ body {
 }
 
 .battle {
-    background: #000000 linear-gradient(#af9d6d, #c09a1d) repeat-x;
-    border-radius: 2px;
+    background: #ffffff;
+    border-radius: 6px;
     border: 1px solid #c6c6c6;
     color: #444;
     padding: 0.5rem 1.5rem;
