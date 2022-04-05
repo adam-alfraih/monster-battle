@@ -12,12 +12,11 @@ Each team is given an array of 25 monsters. The monsters are generated through t
 
 On the click of a button, two random cards are chosen from each deck. The team with the highest HP from the selected card wins the round. The winner keeps the two cards in a b_deck.
 
-Whichever winner collects the most cards wins the game. The score and state of the game is saved in local storage and persists even if the user refreshes or closes the browser.
+Whichever winner collects the most cards wins the game. The score and state of the game is saved in your local storage and persists even if the user refreshes or closes the browser.
 
 ## Notes
 -   This project was intentionally written so that it was readable without comments. 
--   If given more time, I would have rendered the b_deck array length on the screen as a card, implemented the card editing feature, as well as the "pick your team" feature. Considering the timeline, I descoped the project and prioritised the features that are currently implemented.
--   This project was intentionally written so that it was readable without comments. 
+-   If given more time, I would have rendered the b_deck array.length on the screen as a card, implemented the card editing feature, as well as the "pick your team" feature. Considering the timeline, I descoped the project and prioritised the features that are currently implemented.
 
 ## Getting Started
  
