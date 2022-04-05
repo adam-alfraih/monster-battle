@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from './components/Card'
 
 const App = () => {
@@ -105,7 +105,7 @@ const App = () => {
                 const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
                 const data = await res.json()
 
-                const {name, sprites: {other: {dream_world: {front_default}}}} = data
+                const { name, sprites: { other: { dream_world: { front_default } } } } = data
                 index < 25 ? setTeamB(currentList => [...currentList, {
                     name,
                     front_default,
@@ -133,7 +133,7 @@ const App = () => {
     function battle() {
 
         if (hasStarted) {
-            const {indexB, indexR} = play()
+            const { indexB, indexR } = play()
             if (!(indexB === 0 && indexR === 0)) {
                 updateScore(indexB, indexR)
             }
@@ -149,7 +149,7 @@ const App = () => {
         setCurrentCardB(teamB[bCardIndex])
         setCurrentCardR(teamR[rCardIndex])
 
-        return {indexB: bCardIndex, indexR: rCardIndex}
+        return { indexB: bCardIndex, indexR: rCardIndex }
     }
 
     function updateScore(indexB, indexR) {
@@ -186,7 +186,7 @@ const App = () => {
         if (teamB.length === 1 && teamRWins.length > teamBWins.length) {
             setTeamRScore(teamRScore + 1)
             setHasStarted(false)
-            } else if (teamB.length === 1 && teamRWins.length < teamBWins.length) {
+        } else if (teamB.length === 1 && teamRWins.length < teamBWins.length) {
             setTeamBScore(teamBScore + 1)
             setHasStarted(false)
         }
@@ -205,7 +205,7 @@ const App = () => {
     return (
         <div className="app-container">
             <h1>Monster Battle: The Card Game</h1>
-            <h2>Blue Team - {teamBScore} | {teamRScore} - Red Team</h2>
+            <h2>Blue Team {teamBScore} | {teamRScore} Red Team</h2>
             <div className="battle-cards">
                 <Card
                     id='Blue Team'
