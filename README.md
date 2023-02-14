@@ -1,4 +1,4 @@
-# Monster Battle: The Card Game
+# Technical Challenge: Monster Battle: The Card Game
 
 'Monster Battle: The Card Game' is a React application. With a 48 hour deadline, this is the completed version of the technical challenge. 
 
